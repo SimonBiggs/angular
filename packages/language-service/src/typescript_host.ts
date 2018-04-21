@@ -278,6 +278,7 @@ export class TypeScriptServiceHost implements LanguageServiceHost {
     this.modulesOutOfDate = true;
   }
 
+  // Maybe something around here...
   private ensureTemplateMap() {
     if (!this.fileToComponent || !this.templateReferences) {
       const fileToComponent = new Map<string, StaticSymbol>();
